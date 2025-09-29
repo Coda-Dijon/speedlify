@@ -1,0 +1,66 @@
+{
+  "url": "https://www.coda.school/journees-portes-ouvertes",
+  "requestedUrl": "https://www.coda.school/journees-portes-ouvertes#events",
+  "timestamp": 1759139264337,
+  "ranks": {
+    "hundos": 3,
+    "performance": 4,
+    "accessibility": 6,
+    "cumulative": 3
+  },
+  "lighthouse": {
+    "version": "12.8.2",
+    "performance": 0.57,
+    "accessibility": 0.89,
+    "bestPractices": 0.79,
+    "seo": 1,
+    "total": 325
+  },
+  "firstContentfulPaint": 2578.07325,
+  "speedIndex": 3904.0737673467106,
+  "largestContentfulPaint": 5151.291499999999,
+  "totalBlockingTime": 617,
+  "cumulativeLayoutShift": 0.10163920573862607,
+  "timeToInteractive": 21287.64740000001,
+  "maxPotentialFirstInputDelay": 338,
+  "timeToFirstByte": 57.71100000000001,
+  "weight": {
+    "summary": "99 requests • 4.3 MiB",
+    "total": 4523718,
+    "image": 3250560,
+    "imageCount": 20,
+    "script": 1073692,
+    "scriptCount": 52,
+    "document": 23679,
+    "font": 124538,
+    "fontCount": 3,
+    "stylesheet": 37056,
+    "stylesheetCount": 2,
+    "thirdParty": 4502033,
+    "thirdPartyCount": 16
+  },
+  "run": {
+    "number": 1,
+    "total": 1
+  },
+  "sidequests": {
+    "-weight.total": 7,
+    "+weight.total": 2,
+    "-weight.document": 1,
+    "+weight.document": 8,
+    "-weight.script": 2,
+    "+weight.script": 7,
+    "-weight.image": 7,
+    "+weight.image": 2,
+    "-weight.font": 1,
+    "+weight.font": 5,
+    "+weight.fontCount": 3,
+    "-timeToFirstByte": 1,
+    "-totalBlockingTime": 1,
+    "-largestContentfulPaint": 6
+  },
+  "axe": {
+    "passes": 1138,
+    "violations": 10
+  }
+}
