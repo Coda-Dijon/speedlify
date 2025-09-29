@@ -1,0 +1,38 @@
+name: Speedlify — scan & publish
+
+on:
+  schedule:
+    - cron: "0 12 */3 * *"  # tous les 3 jours
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Git identity for CI
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Make script executable
+        run: chmod +x scripts/run-publish.sh
+
+      - name: Run publish script
+        run: |
+          cd scripts
+          ./run-publish.sh
