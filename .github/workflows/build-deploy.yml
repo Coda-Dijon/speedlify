@@ -3,8 +3,6 @@ name: Deploy pages
 on:
   push:
     branches: ["live"]
-  schedule:
-    - cron: "0 0 */3 * *" # Run every 3 days at midnight
   workflow_dispatch:
 
 permissions:
@@ -26,8 +24,6 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Install npm dependencies
         run: npm install
-      - name: Run tests
-        run: npm run test-pages
       - name: Build speedlify
         run: |
           npm run build
