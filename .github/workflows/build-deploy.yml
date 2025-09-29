@@ -3,6 +3,8 @@ name: Deploy pages
 on:
   push:
     branches: ["live"]
+  schedule:
+    - cron: "0 0 */3 * *" # Run every 3 days at midnight
   workflow_dispatch:
 
 permissions:
