@@ -35,7 +35,7 @@ jobs:
           echo "GOOGLE_CHROME_BIN=$CHROME_PATH" >> $GITHUB_ENV
           echo "LIGHTHOUSE_CHROMIUM_PATH=$CHROME_PATH" >> $GITHUB_ENV
           echo "CI=true" >> $GITHUB_ENV
-          
+
       - name: Git identity for CI
         run: |
           git config user.name  "github-actions[bot]"
