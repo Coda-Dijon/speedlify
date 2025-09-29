@@ -13,10 +13,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+      - name: Install deps (download Chromium)
+        env:
+          PUPPETEER_SKIP_DOWNLOAD: "false"
+          PUPPETEER_PRODUCT: "chrome"
+          CI: "true"
+        run: npm ci
+
+      - name: Export Chrome path (Puppeteer)
+        run: |
+          echo "CHROME_PATH=$(node -p "require('puppeteer').executablePath()")" >> $GITHUB_ENV
+          echo "GOOGLE_CHROME_BIN=$CHROME_PATH" >> $GITHUB_ENV
+          echo "LIGHTHOUSE_CHROMIUM_PATH=$CHROME_PATH" >> $GITHUB_ENV
+          echo "CI=true" >> $GITHUB_ENV
 
       - name: Install npm dependencies
         run: npm install
