@@ -109,25 +109,24 @@ async function tryToPreventNetlifyBuildTimeout(dateTestsStarted, numberOfUrls, e
 		let runCount =
 			group.options && group.options.runs ? group.options.runs : NUMBER_OF_RUNS;
 		
-		let options = Object.assign({
+		let defaultChromeFlags = [
+			'--headless',
+			'--disable-dev-shm-usage',
+			'--no-sandbox',
+			'--disable-setuid-sandbox',
+			'--disable-gpu'
+		];
+
+		let options = {
+			chromeFlags: group.options && group.options.chromeFlags
+				? [...defaultChromeFlags, ...group.options.chromeFlags]
+				: defaultChromeFlags,
 			launchOptions: {
-				executablePath: chromePath,
-				args: [
-					'--headless',
-					'--disable-dev-shm-usage',
-					'--no-sandbox',
-					'--disable-setuid-sandbox',
-					'--disable-gpu'
-				]
+				chromePath: chromePath,
+				...(group.options && group.options.launchOptions)
 			},
-			chromeFlags: [
-				'--headless',
-				'--disable-dev-shm-usage',
-				'--no-sandbox',
-				'--disable-setuid-sandbox',
-				'--disable-gpu'
-			]
-			}, group.options);
+			...(group.options || {})
+		};
 
 		let results = await PerfLeaderboard(
 			group.urls,
