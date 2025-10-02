@@ -23,6 +23,7 @@ jobs:
 
       - name: Install chrome
         uses: browser-actions/setup-chrome@v2
+        id: setup-chrome
 
       - name: Git identity for CI
         run: |
@@ -33,6 +34,8 @@ jobs:
         run: chmod +x scripts/run-publish.sh
 
       - name: Run publish script
+        env:
+          CHROME_PATH: ${{ steps.setup-chrome.outputs.chrome-path }}
         run: |
           cd scripts
           ./run-publish.sh
