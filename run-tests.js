@@ -113,7 +113,10 @@ async function tryToPreventNetlifyBuildTimeout(dateTestsStarted, numberOfUrls, e
 			chromePath: chromePath,
 			chromeFlags: [
 				'--headless',
-				'--disable-dev-shm-usage'
+				'--disable-dev-shm-usage',
+				'--no-sandbox',
+				'--disable-setuid-sandbox',
+				'--disable-gpu'
 			]
 			}, group.options);
 
