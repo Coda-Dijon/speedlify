@@ -37,6 +37,7 @@
     "fast-glob": "^3.3.3",
     "lodash": "^4.17.21",
     "performance-leaderboard": "^12.4.0",
+    "puppeteer": "^24.23.0",
     "short-hash": "^1.0.0"
   },
   "dependencies": {
