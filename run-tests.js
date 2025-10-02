@@ -110,7 +110,9 @@ async function tryToPreventNetlifyBuildTimeout(dateTestsStarted, numberOfUrls, e
 			group.options && group.options.runs ? group.options.runs : NUMBER_OF_RUNS;
 		
 		let options = Object.assign({
-			chromePath: chromePath,
+			launchOptions: {
+				executablePath: chromePath
+			},
 			chromeFlags: [
 				'--headless',
 				'--disable-dev-shm-usage',
