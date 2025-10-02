@@ -111,7 +111,14 @@ async function tryToPreventNetlifyBuildTimeout(dateTestsStarted, numberOfUrls, e
 		
 		let options = Object.assign({
 			launchOptions: {
-				executablePath: chromePath
+				executablePath: chromePath,
+				args: [
+					'--headless',
+					'--disable-dev-shm-usage',
+					'--no-sandbox',
+					'--disable-setuid-sandbox',
+					'--disable-gpu'
+				]
 			},
 			chromeFlags: [
 				'--headless',
