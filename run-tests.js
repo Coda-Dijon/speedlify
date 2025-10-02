@@ -4,6 +4,9 @@ const shortHash = require("short-hash");
 const fastglob = require("fast-glob");
 const PerfLeaderboard = require("performance-leaderboard");
 
+const chromePuppeteerPath = require("puppeteer").executablePath();
+console.info(`Using Chromium at: ${chromePuppeteerPath}`);
+
 const NUMBER_OF_RUNS = 3;
 const FREQUENCY = 60; // in minutes
 const NETLIFY_MAX_LIMIT = 15; // in minutes, netlify limit
@@ -105,12 +108,11 @@ async function tryToPreventNetlifyBuildTimeout(dateTestsStarted, numberOfUrls, e
 
 		let runCount =
 			group.options && group.options.runs ? group.options.runs : NUMBER_OF_RUNS;
-
+		
 		let options = Object.assign({
 			chromeFlags: [
 				'--headless', 
-				'--disable-dev-shm-usage', 
-				`--chrome-path=${process.env.CHROME_PATH}`
+				'--disable-dev-shm-usage'
 			]
 			}, group.options);
 
