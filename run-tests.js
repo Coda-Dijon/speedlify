@@ -2,7 +2,7 @@ require("dotenv").config();
 const fs = require("fs").promises;
 const shortHash = require("short-hash");
 const fastglob = require("fast-glob");
-const PerfLeaderboard = require("performance-leaderboard");
+const PerfLeaderboard = require("./lib/performance-leaderboard/performance-leaderboard.js");
 
 const chromePath = process.env.CHROME_PATH || require("puppeteer").executablePath();
 console.info(`Using Chromium at: ${chromePath}`);
@@ -108,25 +108,12 @@ async function tryToPreventNetlifyBuildTimeout(dateTestsStarted, numberOfUrls, e
 
 		let runCount =
 			group.options && group.options.runs ? group.options.runs : NUMBER_OF_RUNS;
-		
-		let defaultChromeFlags = [
-			'--headless',
-			'--disable-dev-shm-usage',
-			'--no-sandbox',
-			'--disable-setuid-sandbox',
-			'--disable-gpu'
-		];
 
-		let options = {
-			chromeFlags: group.options && group.options.chromeFlags
-				? [...defaultChromeFlags, ...group.options.chromeFlags]
-				: defaultChromeFlags,
+		let options = Object.assign({
 			launchOptions: {
-				chromePath: chromePath,
-				...(group.options && group.options.launchOptions)
-			},
-			...(group.options || {})
-		};
+				chromePath: chromePath
+			}
+		}, group.options);
 
 		let results = await PerfLeaderboard(
 			group.urls,
