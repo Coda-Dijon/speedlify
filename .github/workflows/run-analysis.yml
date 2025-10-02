@@ -21,12 +21,8 @@ jobs:
       - name: Install npm dependencies
         run: npm install
 
-      - name: Install deps (download Chromium)
-        env:
-          PUPPETEER_SKIP_DOWNLOAD: "false"
-          PUPPETEER_PRODUCT: "chrome"
-          CI: "true"
-        run: npm ci
+      - name: Install chrome
+        uses: browser-actions/setup-chrome@v2
 
       - name: Git identity for CI
         run: |
