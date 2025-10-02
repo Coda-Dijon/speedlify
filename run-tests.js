@@ -111,7 +111,8 @@ async function tryToPreventNetlifyBuildTimeout(dateTestsStarted, numberOfUrls, e
 
 		let options = Object.assign({
 			launchOptions: {
-				chromePath: chromePath
+				chromePath: chromePath,
+				logLevel: 'verbose'
 			}
 		}, group.options);
 
