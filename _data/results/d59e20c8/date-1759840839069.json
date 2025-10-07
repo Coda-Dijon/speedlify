@@ -1,0 +1,66 @@
+{
+  "url": "https://www.coda.school/formation/bachelor-informatique",
+  "requestedUrl": "https://www.coda.school/formation/bachelor-informatique",
+  "timestamp": 1759841104454,
+  "ranks": {
+    "hundos": 7,
+    "performance": 7,
+    "accessibility": 5,
+    "cumulative": 7
+  },
+  "lighthouse": {
+    "version": "12.8.2",
+    "performance": 0.36,
+    "accessibility": 0.91,
+    "bestPractices": 0.79,
+    "seo": 1,
+    "total": 306
+  },
+  "firstContentfulPaint": 4577.7122500000005,
+  "speedIndex": 6442.824705314838,
+  "largestContentfulPaint": 7647.561999999998,
+  "totalBlockingTime": 1382.32775,
+  "cumulativeLayoutShift": 0.0018421614241810496,
+  "timeToInteractive": 17328.973475,
+  "maxPotentialFirstInputDelay": 358,
+  "timeToFirstByte": 2134.906,
+  "weight": {
+    "summary": "115 requests • 1.6 MiB",
+    "total": 1637965,
+    "image": 70611,
+    "imageCount": 22,
+    "script": 1282683,
+    "scriptCount": 54,
+    "document": 50500,
+    "font": 154465,
+    "fontCount": 4,
+    "stylesheet": 37274,
+    "stylesheetCount": 2,
+    "thirdParty": 1589458,
+    "thirdPartyCount": 17
+  },
+  "run": {
+    "number": 1,
+    "total": 1
+  },
+  "sidequests": {
+    "-weight.total": 4,
+    "+weight.total": 5,
+    "-weight.document": 7,
+    "+weight.document": 2,
+    "-weight.script": 7,
+    "+weight.script": 2,
+    "-weight.image": 2,
+    "+weight.image": 7,
+    "-weight.font": 2,
+    "+weight.font": 2,
+    "+weight.fontCount": 2,
+    "-timeToFirstByte": 8,
+    "-totalBlockingTime": 8,
+    "-largestContentfulPaint": 5
+  },
+  "axe": {
+    "passes": 2469,
+    "violations": 9
+  }
+}
