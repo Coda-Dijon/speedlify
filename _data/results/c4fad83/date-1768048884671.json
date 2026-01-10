@@ -1,0 +1,66 @@
+{
+  "url": "https://coda-school.github.io/advent-2025/",
+  "requestedUrl": "https://coda-school.github.io/advent-2025/",
+  "timestamp": 1768049391744,
+  "ranks": {
+    "hundos": 1,
+    "performance": 1,
+    "accessibility": 1,
+    "cumulative": 1
+  },
+  "lighthouse": {
+    "version": "12.8.2",
+    "performance": 0.97,
+    "accessibility": 1,
+    "bestPractices": 1,
+    "seo": 0.91,
+    "total": 388
+  },
+  "firstContentfulPaint": 1587.5475000000001,
+  "speedIndex": 1587.5475000000001,
+  "largestContentfulPaint": 2425.7035,
+  "totalBlockingTime": 5,
+  "cumulativeLayoutShift": 0,
+  "timeToInteractive": 2511.5793999999996,
+  "maxPotentialFirstInputDelay": 58,
+  "timeToFirstByte": 72.762,
+  "weight": {
+    "summary": "21 requests • 97.9 KiB",
+    "total": 100267,
+    "image": 2951,
+    "imageCount": 2,
+    "script": 85924,
+    "scriptCount": 14,
+    "document": 2719,
+    "font": 0,
+    "fontCount": 0,
+    "stylesheet": 7275,
+    "stylesheetCount": 3,
+    "thirdParty": 70157,
+    "thirdPartyCount": 4
+  },
+  "run": {
+    "number": 1,
+    "total": 1
+  },
+  "sidequests": {
+    "-weight.total": 1,
+    "+weight.total": 1,
+    "-weight.document": 1,
+    "+weight.document": 1,
+    "-weight.script": 1,
+    "+weight.script": 1,
+    "-weight.image": 1,
+    "+weight.image": 1,
+    "-weight.font": 1,
+    "+weight.font": 1,
+    "+weight.fontCount": 1,
+    "-timeToFirstByte": 1,
+    "-totalBlockingTime": 1,
+    "-largestContentfulPaint": 1
+  },
+  "axe": {
+    "passes": 168,
+    "violations": 0
+  }
+}
