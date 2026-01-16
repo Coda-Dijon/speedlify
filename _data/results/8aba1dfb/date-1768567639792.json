@@ -1,0 +1,66 @@
+{
+  "url": "https://www.coda.school/formation-informatique",
+  "requestedUrl": "https://www.coda.school/formation-informatique",
+  "timestamp": 1768567849497,
+  "ranks": {
+    "hundos": 2,
+    "performance": 2,
+    "accessibility": 5,
+    "cumulative": 2
+  },
+  "lighthouse": {
+    "version": "12.8.2",
+    "performance": 0.54,
+    "accessibility": 0.91,
+    "bestPractices": 0.75,
+    "seo": 1,
+    "total": 320
+  },
+  "firstContentfulPaint": 2519.45175,
+  "speedIndex": 2763.236733958315,
+  "largestContentfulPaint": 3044.084,
+  "totalBlockingTime": 1135.999999999999,
+  "cumulativeLayoutShift": 0.2648503608985993,
+  "timeToInteractive": 14725.5225,
+  "maxPotentialFirstInputDelay": 283,
+  "timeToFirstByte": 47.347,
+  "weight": {
+    "summary": "108 requests • 1.8 MiB",
+    "total": 1844492,
+    "image": 43290,
+    "imageCount": 12,
+    "script": 1475560,
+    "scriptCount": 53,
+    "document": 25180,
+    "font": 227157,
+    "fontCount": 6,
+    "stylesheet": 48464,
+    "stylesheetCount": 3,
+    "thirdParty": 1821306,
+    "thirdPartyCount": 19
+  },
+  "run": {
+    "number": 1,
+    "total": 1
+  },
+  "sidequests": {
+    "-weight.total": 1,
+    "+weight.total": 7,
+    "-weight.document": 1,
+    "+weight.document": 7,
+    "-weight.script": 2,
+    "+weight.script": 6,
+    "-weight.image": 1,
+    "+weight.image": 7,
+    "-weight.font": 2,
+    "+weight.font": 2,
+    "+weight.fontCount": 2,
+    "-timeToFirstByte": 2,
+    "-totalBlockingTime": 3,
+    "-largestContentfulPaint": 1
+  },
+  "axe": {
+    "passes": 1085,
+    "violations": 1
+  }
+}
