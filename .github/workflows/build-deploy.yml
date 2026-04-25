@@ -4,6 +4,12 @@ on:
   push:
     branches: ["live"]
   workflow_dispatch:
+  workflow_run:
+    workflows: ["Speedlify — scan & publish"]
+    types:
+      - completed
+    branches:
+      - live
 
 permissions:
   contents: read
