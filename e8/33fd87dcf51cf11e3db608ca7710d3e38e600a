@@ -1,0 +1,23 @@
+.github/workflows/build-deploy.yml
+  32c126873b261bac 7-12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.4",
+  "base_commit_sha": "e833fd87dcf51cf11e3db608ca7710d3e38e600a",
+  "prompts": {
+    "32c126873b261bac": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b2d23451-ad5e-4870-8071-9a558af840e6",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "Yoan Thirion",
+      "messages": [],
+      "total_additions": 8,
+      "total_deletions": 2,
+      "accepted_lines": 8,
+      "overriden_lines": 0
+    }
+  }
+}
