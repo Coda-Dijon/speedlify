@@ -1,0 +1,20 @@
+{
+  "url": "https://www.coda.school/campus/dijon",
+  "error": "Unknown error (no scores).",
+  "sidequests": {
+    "-weight.total": 7,
+    "+weight.total": 7,
+    "-weight.document": 7,
+    "+weight.document": 7,
+    "-weight.script": 7,
+    "+weight.script": 7,
+    "-weight.image": 7,
+    "+weight.image": 7,
+    "-weight.font": 7,
+    "+weight.font": 7,
+    "+weight.fontCount": 5,
+    "-timeToFirstByte": 7,
+    "-totalBlockingTime": 7,
+    "-largestContentfulPaint": 7
+  }
+}
