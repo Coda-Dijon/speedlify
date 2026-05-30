@@ -6,6 +6,6 @@ module.exports = {
         frequency: 1
     },
     urls: [
-        "https://coda-school.github.io/advent-2025/"
+         "https://coda-dijon.github.io/advent-2026/"
     ]
 };
