@@ -1,0 +1,66 @@
+{
+  "url": "https://coda-dijon.github.io/advent-2026/",
+  "requestedUrl": "https://coda-dijon.github.io/advent-2026/",
+  "timestamp": 1788265331248,
+  "ranks": {
+    "hundos": 1,
+    "performance": 1,
+    "accessibility": 1,
+    "cumulative": 1
+  },
+  "lighthouse": {
+    "version": "12.8.2",
+    "performance": 1,
+    "accessibility": 1,
+    "bestPractices": 1,
+    "seo": 1,
+    "total": 400
+  },
+  "firstContentfulPaint": 1258.359,
+  "speedIndex": 1809.6597019999906,
+  "largestContentfulPaint": 1292.359,
+  "totalBlockingTime": 3.5,
+  "cumulativeLayoutShift": 0.01686038708842172,
+  "timeToInteractive": 1305.009,
+  "maxPotentialFirstInputDelay": 57,
+  "timeToFirstByte": 52.048,
+  "weight": {
+    "summary": "25 requests • 126.8 KiB",
+    "total": 129837,
+    "image": 2402,
+    "imageCount": 1,
+    "script": 66929,
+    "scriptCount": 12,
+    "document": 2509,
+    "font": 45618,
+    "fontCount": 3,
+    "stylesheet": 10455,
+    "stylesheetCount": 6,
+    "thirdParty": 560,
+    "thirdPartyCount": 1
+  },
+  "run": {
+    "number": 1,
+    "total": 1
+  },
+  "sidequests": {
+    "-weight.total": 1,
+    "+weight.total": 1,
+    "-weight.document": 1,
+    "+weight.document": 1,
+    "-weight.script": 1,
+    "+weight.script": 1,
+    "-weight.image": 1,
+    "+weight.image": 1,
+    "-weight.font": 1,
+    "+weight.font": 1,
+    "+weight.fontCount": 1,
+    "-timeToFirstByte": 1,
+    "-totalBlockingTime": 1,
+    "-largestContentfulPaint": 1
+  },
+  "axe": {
+    "passes": 511,
+    "violations": 4
+  }
+}
