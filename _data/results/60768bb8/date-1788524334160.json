@@ -1,0 +1,66 @@
+{
+  "url": "https://www.coda.school/alternance",
+  "requestedUrl": "https://www.coda.school/alternance",
+  "timestamp": 1788524437141,
+  "ranks": {
+    "hundos": 4,
+    "performance": 4,
+    "accessibility": 4,
+    "cumulative": 4
+  },
+  "lighthouse": {
+    "version": "12.8.2",
+    "performance": 0.43,
+    "accessibility": 0.92,
+    "bestPractices": 0.75,
+    "seo": 0.92,
+    "total": 302
+  },
+  "firstContentfulPaint": 2617.2861,
+  "speedIndex": 3627.050917621431,
+  "largestContentfulPaint": 8815.957999999999,
+  "totalBlockingTime": 1202.0000000000018,
+  "cumulativeLayoutShift": 0.1146796915008262,
+  "timeToInteractive": 22220.20835,
+  "maxPotentialFirstInputDelay": 485,
+  "timeToFirstByte": 123.711,
+  "weight": {
+    "summary": "147 requests • 3 MiB",
+    "total": 3192740,
+    "image": 594037,
+    "imageCount": 50,
+    "script": 1729803,
+    "scriptCount": 56,
+    "document": 31678,
+    "font": 761128,
+    "fontCount": 8,
+    "stylesheet": 57200,
+    "stylesheetCount": 3,
+    "thirdParty": 3161062,
+    "thirdPartyCount": 19
+  },
+  "run": {
+    "number": 1,
+    "total": 1
+  },
+  "sidequests": {
+    "-weight.total": 5,
+    "+weight.total": 3,
+    "-weight.document": 2,
+    "+weight.document": 6,
+    "-weight.script": 3,
+    "+weight.script": 5,
+    "-weight.image": 4,
+    "+weight.image": 4,
+    "-weight.font": 6,
+    "+weight.font": 2,
+    "+weight.fontCount": 2,
+    "-timeToFirstByte": 7,
+    "-totalBlockingTime": 1,
+    "-largestContentfulPaint": 5
+  },
+  "axe": {
+    "passes": 2594,
+    "violations": 1
+  }
+}
