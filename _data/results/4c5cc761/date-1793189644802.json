@@ -1,0 +1,66 @@
+{
+  "url": "https://www.coda.school/campus/dijon",
+  "requestedUrl": "https://www.coda.school/campus/dijon",
+  "timestamp": 1793189772908,
+  "ranks": {
+    "hundos": 4,
+    "performance": 6,
+    "accessibility": 3,
+    "cumulative": 4
+  },
+  "lighthouse": {
+    "version": "12.8.2",
+    "performance": 0.4,
+    "accessibility": 0.94,
+    "bestPractices": 0.75,
+    "seo": 0.92,
+    "total": 301
+  },
+  "firstContentfulPaint": 2560.329,
+  "speedIndex": 4604.294669235791,
+  "largestContentfulPaint": 8043.175999999999,
+  "totalBlockingTime": 3318.000000000002,
+  "cumulativeLayoutShift": 0.03469243014397773,
+  "timeToInteractive": 22182.081299999998,
+  "maxPotentialFirstInputDelay": 750,
+  "timeToFirstByte": 55.137,
+  "weight": {
+    "summary": "142 requests • 3 MiB",
+    "total": 3110590,
+    "image": 627308,
+    "imageCount": 43,
+    "script": 2092479,
+    "scriptCount": 56,
+    "document": 38222,
+    "font": 231434,
+    "fontCount": 7,
+    "stylesheet": 95436,
+    "stylesheetCount": 3,
+    "thirdParty": 3072368,
+    "thirdPartyCount": 18
+  },
+  "run": {
+    "number": 1,
+    "total": 1
+  },
+  "sidequests": {
+    "-weight.total": 3,
+    "+weight.total": 5,
+    "-weight.document": 5,
+    "+weight.document": 3,
+    "-weight.script": 6,
+    "+weight.script": 2,
+    "-weight.image": 5,
+    "+weight.image": 3,
+    "-weight.font": 2,
+    "+weight.font": 5,
+    "+weight.fontCount": 2,
+    "-timeToFirstByte": 2,
+    "-totalBlockingTime": 6,
+    "-largestContentfulPaint": 5
+  },
+  "axe": {
+    "passes": 2930,
+    "violations": 14
+  }
+}
